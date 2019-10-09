@@ -1,3 +1,5 @@
 ﻿module TwoFer
 
-let twoFer (input: string option): string = System.String.Format("One for {0}, one for me.", input)
+let twoFer (input: string option): string =
+    let input = defaultArg input "you"
+    "One for " + input + ", one for me."
