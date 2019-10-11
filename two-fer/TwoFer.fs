@@ -1,5 +1,6 @@
-﻿module TwoFer
+module TwoFer
 
-let twoFer (input: string option): string =
-    let input = defaultArg input "you"
-    "One for " + input + ", one for me."
+let twoFer (input : string option) : string =
+    input
+    |> Option.defaultValue "you"
+    |> sprintf "One for %s, one for me."

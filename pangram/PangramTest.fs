@@ -11,7 +11,7 @@ open Pangram
 let ``Empty sentence`` () =
     isPangram "" |> should equal false
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Perfect lower case`` () =
     isPangram "abcdefghijklmnopqrstuvwxyz" |> should equal true
 
